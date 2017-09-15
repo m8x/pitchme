@@ -31,7 +31,6 @@
 - ロードマップ
 - what is <span style="color: #e49436;">this</span>?
 - クラスを書いてみよう
-- 宿題
 
 ---
 
@@ -103,7 +102,7 @@ $ n 8.2.1
 
 +++
 
-```ecmascript 6
+```javascript
 window.foo = 'bar';
 console.log(window.foo);
 console.log(this.foo);
@@ -118,7 +117,7 @@ console.log(window === this);
 
 +++
 
-```ecmascript 6
+```javascript
 const foo = {
   bar: 'bar',
   foobar: function () {
@@ -137,7 +136,7 @@ console.log(foo.foobar());
 
 +++
 
-```ecmascript 6
+```javascript
 const foo = {
   bar: 'bar',
   foobar: function () {
@@ -159,7 +158,7 @@ console.log(foo.foobar());
 
 +++
 
-```ecmascript 6
+```javascript
 const foo = {
   bar: 'bar',
   didClickButton: function () {
@@ -193,7 +192,7 @@ button.click();
 
 +++
 
-```ecmascript 6
+```javascript
 const foo = {
   bar: 'bar',
   didClickButton: function () {
@@ -231,7 +230,7 @@ button.click();
 
 +++
 
-```ecmascript 6
+```javascript
 const foo = {
   bar: 'bar',
   didClickButton: function () {
@@ -276,7 +275,7 @@ button.click();
 
 +++
 
-```ecmascript 6
+```javascript
 const foo = {
   bar: 'bar',
   didClickButton: () => {
@@ -322,7 +321,7 @@ button.click();
 
 ### 基本的な構文
 
-```ecmascript 6
+```javascript
 import BaseClass from './BaseClass';
 
 class Foo extends BaseClass {
@@ -346,7 +345,7 @@ console.log(foo.foobar()); // -> foobar
 
 ### その他の例
 
-```ecmascript 6
+```javascript
 import BaseClass from './BaseClass';
 
 class Button extends BaseClass {
@@ -384,7 +383,7 @@ button.click(); // -> foobar
 
 ### @m8x が書いたFizz Buzzボタン
 
-```ecmascript 6
+```javascript
 import BaseClass from './BaseClass';
 
 class FizzBuzzButton extends BaseClass {
